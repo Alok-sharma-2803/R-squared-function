@@ -1,0 +1,9 @@
+# Function for R^2 --------------------------------------------------------
+
+Rsqr <- function(x,y)
+{
+  n=length(x)
+  r2 <- 1 - (sum((x-y )^2)/sum((x-mean(y))^2))
+  print("the value of squared R is : ")
+  print(r2)
+}
